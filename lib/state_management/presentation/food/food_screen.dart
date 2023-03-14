@@ -4,6 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:foodapp/state_management/core/master/master_data.dart';
 import 'package:foodapp/state_management/presentation/food/food_cardview.dart';
 import 'package:foodapp/state_management/presentation/food/food_pageview.dart';
+import 'package:get/get.dart';
+
+import '../restaurant/restaurant_screen.dart';
 
 class FoodScreen extends StatefulWidget {
   const FoodScreen({super.key});
@@ -71,7 +74,14 @@ class _FoodScreenState extends State<FoodScreen> {
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    TextButton(onPressed: () {}, child: const Text('See more'))
+                    TextButton(
+                        onPressed: () {
+                          Get.to(RestaurantScreen(
+                            title: 'Best Choice',
+                            data: newstore,
+                          ));
+                        },
+                        child: const Text('See more'))
                   ]),
             ),
           ),
