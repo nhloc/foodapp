@@ -56,7 +56,7 @@ class _SplashScreen extends State<SplashScreen> {
                             onPressed: () {
                               Get.offNamed(AppRoutes.login);
                             },
-                            child: const Text('Get Started')),
+                            child: const Text('Continue', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),)),
                         const Spacer(flex: 1)
                       ],
                     )))

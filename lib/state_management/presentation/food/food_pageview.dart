@@ -36,6 +36,7 @@ class _FoodPageViewState extends State<FoodPageView> {
                 bottom: 16,
                 right: 16,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                     children: List.generate(
                   FoodDataPageView.length,
                   (index) => Padding(

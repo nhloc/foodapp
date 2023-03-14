@@ -1,4 +1,71 @@
 {
+"bestchoice": [
+    {
+        "id" : 1,
+        "code": "001",
+        "name": "Pizza Hut",
+        "image": "assets/images/foodypizza2.jpg",
+        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+    },
+    {
+        "id" : 2,
+        "code": "002",
+        "name": "The Pizza Company",
+        "image": "assets/images/imagecp.jpeg",
+        "Address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+    }, 
+    {
+        "id" : 3,
+        "code": "003",
+        "name": "Pizza Y",
+        "image": "assets/images/foodypizza.jpg",
+        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+    }
+],
+"newstore":[
+    {
+        "id" : 4,
+        "code": "004",
+        "name": "Pizza City",
+        "image": "assets/images/foodypizza2.jpg",
+        "Address" : "21 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+    },
+    {
+        "id" : 5,
+        "code": "005",
+        "name": "The Pizza",
+        "image": "assets/images/imagecp.jpeg",
+        "Address" : "32, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+    }, 
+    {
+        "id" : 6,
+        "code": "006",
+        "name": "Pizza Kai",
+        "image": "assets/images/foodypizza.jpg",
+        "Address" : "20 Nguyen Van Linh, An Hoa Ward, Ninh Kieu District, Can Tho"
+    },
+    {
+        "id" : 1,
+        "code": "001",
+        "name": "Pizza Hut",
+        "image": "assets/images/foodypizza2.jpg",
+        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+    },
+    {
+        "id" : 2,
+        "code": "002",
+        "name": "The Pizza Company",
+        "image": "assets/images/imagecp.jpeg",
+        "Address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+    }, 
+    {
+        "id" : 3,
+        "code": "003",
+        "name": "Pizza Y",
+        "image": "assets/images/foodypizza.jpg",
+        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+    }   
+],
 "food": [
     {
         "id" : 1,
@@ -64,6 +131,5 @@
         "image": "assets/images/fried-rice.png",
         "description" : "Seafood Fried Rice With Shrimp, Squid, And Fresh Vegetables",
         "price" : "99.000"
-    }
-]
+    }]
 }
