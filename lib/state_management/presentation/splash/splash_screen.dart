@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/state_management/core/master/master_data.dart';
 import 'package:foodapp/state_management/presentation/routes/app_routes.dart';
 import 'package:foodapp/state_management/presentation/splash/splash_pageview.dart';
 import 'package:get/get.dart';
@@ -11,19 +12,10 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreen extends State<SplashScreen> {
-  @override
   int currentPage = 0;
   List<Map<String, String>> splashData = [
-    {
-      "text": "Fast and Friendly for all",
-      "image":
-          "https://www.pngkey.com/png/full/4-49191_food-png-transparent-free-images-fast-food-clipart.png"
-    },
-    {
-      "text": "Fast delivery team",
-      "image":
-          "https://mikeysmealz.com/wp-content/uploads/2022/08/delivery-image.png"
-    }
+    {"text": "Fast and Friendly for all", "image": MasterUI.splash_img_1},
+    {"text": "Fast delivery team", "image": MasterUI.splash_img_2}
   ];
   @override
   Widget build(BuildContext context) {

@@ -23,7 +23,7 @@ class SplashPageView extends StatelessWidget {
                 color: Color.fromARGB(255, 255, 95, 46),
                 fontWeight: FontWeight.bold)),
         const Spacer(flex: 5),
-        Image.network(image!),
+        Image.asset(image!),
       ],
     );
   }

@@ -1,0 +1,69 @@
+{
+"food": [
+    {
+        "id" : 1,
+        "code": "001",
+        "name": "Seafood Pizza with Pesto . Sauce",
+        "image": "assets/images/pizza_image.png",
+        "description" : "Shrimp, squid and mushrooms in signature Pesto sauce, topped with Mozzarella cheese",
+        "price" : "139.000"
+    },
+    {
+        "id" : 2,
+        "code": "002",
+        "name": "Cheese Bacon Pizza",
+        "image": "assets/images/pizza_image.png",
+        "description" : "Smoked Bacon, Mozzarella Cheese, Onions, Sweet Chili Sauce, Cheesy Mayo Sauce, Minced Parsley",
+        "price" : "49.000"
+    },
+    {
+        "id" : 3,
+        "code": "003",
+        "name": "Grilled Chicken Pizza with Mushrooms",
+        "image": "assets/images/pizza_image.png",
+        "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
+        "price" : "119.000"
+    },
+    {
+        "id" : 4,
+        "code": "004",
+        "name": "Mixed Pizza",
+        "image": "assets/images/pizza_image.png",
+        "description" : "Traditional flavors with beef, bacon, pepperoni, bell peppers, mushrooms and onions, topped with Mozzarella cheese",
+        "price" : "119.000"
+    },
+
+    {
+        "id" : 5,
+        "code": "005",
+        "name": "Minced Beef Spaghetti with Tomato Sauce",
+        "image": "assets/images/spaghetti.png",
+        "description" : "Spaghetti with tomato sauce with beef",
+        "price" : "139.000"
+    },
+    {
+        "id" : 6,
+        "code": "006",
+        "name": "Spaghetti with Bacon with Cream Sauce",
+        "image": "assets/images/spaghetti.png",
+        "description" : "Spaghetti with Cream Sauce With Bacon",
+        "price" : "120.000"
+    },
+    {
+        "id" : 7,
+        "code": "007",
+        "name": "Grilled Chicken Pizza with Mushrooms",
+        "image": "assets/images/spaghetti.png",
+        "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
+        "price" : "90.000"
+    },
+    {
+        "id" : 8,
+        "code": "008",
+        "name": "Seafood fried rice",
+        "image": "assets/images/fried-rice.png",
+        "description" : "Seafood Fried Rice With Shrimp, Squid, And Fresh Vegetables",
+        "price" : "99.000"
+    }
+]
+}
