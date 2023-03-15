@@ -5,21 +5,21 @@
         "code": "001",
         "name": "Pizza Hut",
         "image": "assets/images/foodypizza2.jpg",
-        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
     },
     {
         "id" : 2,
         "code": "002",
         "name": "The Pizza Company",
         "image": "assets/images/imagecp.jpeg",
-        "Address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+        "address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
     }, 
     {
         "id" : 3,
         "code": "003",
         "name": "Pizza Y",
         "image": "assets/images/foodypizza.jpg",
-        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
     }
 ],
 "newstore":[
@@ -28,42 +28,42 @@
         "code": "004",
         "name": "Pizza City",
         "image": "assets/images/foodypizza2.jpg",
-        "Address" : "21 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "21 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
     },
     {
         "id" : 5,
         "code": "005",
         "name": "The Pizza",
         "image": "assets/images/imagecp.jpeg",
-        "Address" : "32, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+        "address" : "32, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
     }, 
     {
         "id" : 6,
         "code": "006",
         "name": "Pizza Kai",
         "image": "assets/images/foodypizza.jpg",
-        "Address" : "20 Nguyen Van Linh, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "20 Nguyen Van Linh, An Hoa Ward, Ninh Kieu District, Can Tho"
     },
     {
         "id" : 1,
         "code": "001",
         "name": "Pizza Hut",
         "image": "assets/images/foodypizza2.jpg",
-        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
     },
     {
         "id" : 2,
         "code": "002",
         "name": "The Pizza Company",
         "image": "assets/images/imagecp.jpeg",
-        "Address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
+        "address" : "2nd Floor, Lot L2 - 04 Sense City, 1 Hoa Binh, Tan An Ward, Ninh Kieu District, Can Tho"
     }, 
     {
         "id" : 3,
         "code": "003",
         "name": "Pizza Y",
         "image": "assets/images/foodypizza.jpg",
-        "Address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
+        "address" : "202 Nguyen Van Cu, An Hoa Ward, Ninh Kieu District, Can Tho"
     }   
 ],
 "food": [
@@ -71,7 +71,7 @@
         "id" : 1,
         "code": "001",
         "name": "Seafood Pizza with Pesto . Sauce",
-        "image": "assets/images/pizza_image.png",
+        "image": "assets/images/foodypizza.jpg",
         "description" : "Shrimp, squid and mushrooms in signature Pesto sauce, topped with Mozzarella cheese",
         "price" : "139.000"
     },
@@ -79,7 +79,7 @@
         "id" : 2,
         "code": "002",
         "name": "Cheese Bacon Pizza",
-        "image": "assets/images/pizza_image.png",
+        "image": "assets/images/foodypizza.jpg",
         "description" : "Smoked Bacon, Mozzarella Cheese, Onions, Sweet Chili Sauce, Cheesy Mayo Sauce, Minced Parsley",
         "price" : "49.000"
     },
@@ -87,7 +87,7 @@
         "id" : 3,
         "code": "003",
         "name": "Grilled Chicken Pizza with Mushrooms",
-        "image": "assets/images/pizza_image.png",
+        "image": "assets/images/foodypizza.jpg",
         "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
         "price" : "119.000"
     },
@@ -95,7 +95,7 @@
         "id" : 4,
         "code": "004",
         "name": "Mixed Pizza",
-        "image": "assets/images/pizza_image.png",
+        "image": "assets/images/foodypizza.jpg",
         "description" : "Traditional flavors with beef, bacon, pepperoni, bell peppers, mushrooms and onions, topped with Mozzarella cheese",
         "price" : "119.000"
     },
@@ -104,7 +104,7 @@
         "id" : 5,
         "code": "005",
         "name": "Minced Beef Spaghetti with Tomato Sauce",
-        "image": "assets/images/spaghetti.png",
+        "image": "assets/images/myy.jpeg",
         "description" : "Spaghetti with tomato sauce with beef",
         "price" : "139.000"
     },
@@ -112,7 +112,7 @@
         "id" : 6,
         "code": "006",
         "name": "Spaghetti with Bacon with Cream Sauce",
-        "image": "assets/images/spaghetti.png",
+        "image": "assets/images/myy.jpeg",
         "description" : "Spaghetti with Cream Sauce With Bacon",
         "price" : "120.000"
     },
@@ -120,7 +120,7 @@
         "id" : 7,
         "code": "007",
         "name": "Grilled Chicken Pizza with Mushrooms",
-        "image": "assets/images/spaghetti.png",
+        "image": "assets/images/myy.jpeg",
         "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
         "price" : "90.000"
     },
@@ -128,7 +128,7 @@
         "id" : 8,
         "code": "008",
         "name": "Seafood fried rice",
-        "image": "assets/images/fried-rice.png",
+        "image": "assets/images/com.jpeg",
         "description" : "Seafood Fried Rice With Shrimp, Squid, And Fresh Vegetables",
         "price" : "99.000"
     }]

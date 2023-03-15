@@ -99,7 +99,7 @@ class _FoodScreenState extends State<FoodScreen> {
                           child: FoodCardView(
                               image: bestchoice[index]["image"]!,
                               name: bestchoice[index]["name"]!,
-                              address: bestchoice[index]["Address"]!)))),
+                              address: bestchoice[index]["address"]!)))),
             )),
           ),
           SliverPadding(
@@ -113,7 +113,12 @@ class _FoodScreenState extends State<FoodScreen> {
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    TextButton(onPressed: () {}, child: const Text('See more'))
+                    TextButton(onPressed: () {
+                          Get.to(RestaurantScreen(
+                            title: 'New Restaurants',
+                            data: newstore,
+                          ));
+                        }, child: const Text('See more'))
                   ]),
             ),
           ),
@@ -131,7 +136,7 @@ class _FoodScreenState extends State<FoodScreen> {
                           child: FoodCardView(
                               image: newstore[index]["image"]!,
                               name: newstore[index]["name"]!,
-                              address: newstore[index]["Address"]!)))),
+                              address: newstore[index]["address"]!)))),
             )),
           ),
           SliverPadding(
@@ -145,7 +150,12 @@ class _FoodScreenState extends State<FoodScreen> {
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    TextButton(onPressed: () {}, child: const Text('See more'))
+                    TextButton(onPressed: () {
+                          Get.to(RestaurantScreen(
+                            title: 'All Restaurants',
+                            data: newstore,
+                          ));
+                        }, child: const Text('See more'))
                   ]),
             ),
           ),
@@ -163,7 +173,7 @@ class _FoodScreenState extends State<FoodScreen> {
                           child: FoodCardView(
                               image: newstore[index]["image"]!,
                               name: newstore[index]["name"]!,
-                              address: newstore[index]["Address"]!)))),
+                              address: newstore[index]["address"]!)))),
             )),
           ),
           const SliverPadding(padding: EdgeInsets.symmetric(vertical: 20)),

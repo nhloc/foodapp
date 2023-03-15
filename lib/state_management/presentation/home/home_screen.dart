@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/state_management/presentation/food/food_screen.dart';
-import 'package:foodapp/state_management/presentation/home/home_controller.dart';
 import 'package:foodapp/state_management/presentation/routes/app_routes.dart';
 import 'package:get/get.dart';
+
+import '../../core/master/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class _HomePage extends State<HomeScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Restaurant',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
@@ -37,7 +38,7 @@ class _HomePage extends State<HomeScreen> {
           ),
         ],
         currentIndex: 0,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: kMainColor,
         onTap: _onItemTapped,
       ),);
   }

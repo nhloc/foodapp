@@ -14,7 +14,7 @@ class StateManagement extends StatelessWidget {
       initialRoute: AppRoutes.splash,
       getPages: AppPages.pages,
       initialBinding: MainBinding(),
-      theme: ThemeData(fontFamily: 'OpenSans')
+      theme: ThemeData(fontFamily: 'Inter')
     );
   }
 }

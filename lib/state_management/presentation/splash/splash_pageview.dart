@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/master/constants.dart';
+
 class SplashPageView extends StatelessWidget {
   const SplashPageView({super.key, this.text, this.image});
 
@@ -15,12 +17,12 @@ class SplashPageView extends StatelessWidget {
         const Text('FAST FOOD DELIVERY',
             style: TextStyle(
                 fontSize: 24,
-                color: Colors.deepOrange,
+                color: kMainColor,
                 fontWeight: FontWeight.bold)),
         Text(text!,
             style: const TextStyle(
                 fontSize: 18,
-                color: Color.fromARGB(255, 255, 95, 46),
+                color: kMainColor,
                 fontWeight: FontWeight.bold)),
         const Spacer(flex: 5),
         Image.asset(image!),
