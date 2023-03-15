@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/state_management/core/master/constants.dart';
 import 'package:foodapp/state_management/presentation/restaurant/restaurant_pageview.dart';
 
 class RestaurantScreen extends StatelessWidget {
@@ -9,12 +10,12 @@ class RestaurantScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:
-          AppBar(title: Text(title!), backgroundColor: Colors.deepOrangeAccent),
+          AppBar(title: Text(title!), backgroundColor: kMainColor),
       body: ListView.builder(
           itemCount: data.length,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
               child: RestaurantPageView(
                   image: data[index]["image"],
                   name: data[index]["name"],

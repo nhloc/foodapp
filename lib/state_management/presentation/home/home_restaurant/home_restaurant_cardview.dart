@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class FoodCardView extends StatelessWidget {
-  const FoodCardView({super.key, required this.image, required this.name, required this.address});
+import '../../../core/master/constants.dart';
+
+class HomeRestaurantCardView extends StatelessWidget {
+  const HomeRestaurantCardView({super.key, required this.image, required this.name, required this.address});
   final String? image;
   final String? name;
   final String? address;
@@ -20,11 +22,11 @@ class FoodCardView extends StatelessWidget {
               ),
               Text(
                 name!,
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: defaultFontSize16),
               ),
               Text(
                 address!,
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: defaultFontSize16),
               )
             ])),
       ],

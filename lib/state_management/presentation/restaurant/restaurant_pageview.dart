@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/state_management/core/master/constants.dart';
 import 'package:foodapp/state_management/presentation/restaurant/restaurant_detailscreen.dart';
 import 'package:get/get.dart';
 
@@ -27,13 +28,13 @@ class RestaurantPageView extends StatelessWidget {
             },
             child: Text(
               name!,
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: defaultFontSize16),
             )),
         Padding(
           padding: const EdgeInsets.only(left: 5),
           child: Text(
             address!,
-            style: const TextStyle(fontSize: 16),
+            style: const TextStyle(fontSize: defaultFontSize16),
           ),
         ),
         const SizedBox(height: 15)

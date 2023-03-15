@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/state_management/core/master/master_data.dart';
 
-class FoodPageView extends StatefulWidget {
-  FoodPageView({super.key});
+import '../../../core/master/constants.dart';
+
+class HomeRestaurantPageView extends StatefulWidget {
+  const HomeRestaurantPageView({super.key});
 
   @override
-  State<FoodPageView> createState() => _FoodPageViewState();
+  State<HomeRestaurantPageView> createState() => _HomeRestaurantPageViewState();
 }
 
-class _FoodPageViewState extends State<FoodPageView> {
+class _HomeRestaurantPageViewState extends State<HomeRestaurantPageView> {
   // ignore: non_constant_identifier_names
   List<Map<String, String>> FoodDataPageView = [
     {"image": MasterUI.imagefood1},
@@ -57,7 +59,7 @@ class IndicatorDot extends StatelessWidget {
       height: 6,
       width: 10,
       decoration: BoxDecoration(
-          color: isActive ? Colors.deepOrange : Colors.white,
+          color: isActive ? kMainColor : Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(12))),
     );
   }

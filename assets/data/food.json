@@ -71,33 +71,38 @@
         "id" : 1,
         "code": "001",
         "name": "Seafood Pizza with Pesto . Sauce",
-        "image": "assets/images/foodypizza.jpg",
+        "image": "assets/images/pizzza.jpeg",
         "description" : "Shrimp, squid and mushrooms in signature Pesto sauce, topped with Mozzarella cheese",
-        "price" : "139.000"
+        "price" : "139.000",
+        "numberlike" : "230"
     },
     {
         "id" : 2,
         "code": "002",
         "name": "Cheese Bacon Pizza",
-        "image": "assets/images/foodypizza.jpg",
+        "image": "assets/images/pizzza.jpeg",
         "description" : "Smoked Bacon, Mozzarella Cheese, Onions, Sweet Chili Sauce, Cheesy Mayo Sauce, Minced Parsley",
-        "price" : "49.000"
+        "price" : "49.000",
+        "numberlike" : "130"
     },
     {
         "id" : 3,
         "code": "003",
         "name": "Grilled Chicken Pizza with Mushrooms",
-        "image": "assets/images/foodypizza.jpg",
+        "image": "assets/images/pizzza.jpeg",
         "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
-        "price" : "119.000"
+        "price" : "119.000",
+        "numberlike" : "120"
     },
     {
         "id" : 4,
         "code": "004",
         "name": "Mixed Pizza",
-        "image": "assets/images/foodypizza.jpg",
+        "image": "assets/images/pizzza.jpeg",
         "description" : "Traditional flavors with beef, bacon, pepperoni, bell peppers, mushrooms and onions, topped with Mozzarella cheese",
-        "price" : "119.000"
+        "price" : "119.000",
+        "numberlike" : "240"
+        
     },
 
     {
@@ -106,7 +111,8 @@
         "name": "Minced Beef Spaghetti with Tomato Sauce",
         "image": "assets/images/myy.jpeg",
         "description" : "Spaghetti with tomato sauce with beef",
-        "price" : "139.000"
+        "price" : "139.000",
+        "numberlike" : "167"
     },
     {
         "id" : 6,
@@ -114,7 +120,8 @@
         "name": "Spaghetti with Bacon with Cream Sauce",
         "image": "assets/images/myy.jpeg",
         "description" : "Spaghetti with Cream Sauce With Bacon",
-        "price" : "120.000"
+        "price" : "120.000",
+        "numberlike" : "210"
     },
     {
         "id" : 7,
@@ -122,7 +129,9 @@
         "name": "Grilled Chicken Pizza with Mushrooms",
         "image": "assets/images/myy.jpeg",
         "description" : "Grilled Chicken Pizza with Mushrooms on a taste adventure with chicken, mushrooms, pineapple, carrots and sprouts topped with a tangy black pepper sauce",
-        "price" : "90.000"
+        "price" : "90.000",
+        "numberlike" : "203"
+        
     },
     {
         "id" : 8,
@@ -130,6 +139,7 @@
         "name": "Seafood fried rice",
         "image": "assets/images/com.jpeg",
         "description" : "Seafood Fried Rice With Shrimp, Squid, And Fresh Vegetables",
-        "price" : "99.000"
+        "price" : "99.000",
+        "numberlike" : "123"
     }]
 }

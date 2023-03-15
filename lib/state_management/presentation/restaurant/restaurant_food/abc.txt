@@ -1,0 +1,147 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:foodapp/state_management/core/master/constants.dart';
+import 'package:foodapp/state_management/presentation/restaurant/restaurant_food/restaurant_food_screen.dart';
+import 'package:get/get.dart';
+
+import '../../core/master/master_data.dart';
+
+class RestaurantDetailScreen extends StatefulWidget {
+  const RestaurantDetailScreen(
+      {super.key,
+      required this.name,
+      required this.address,
+      required this.image});
+  final String? name;
+  final String? address;
+  final String? image;
+
+  @override
+  State<RestaurantDetailScreen> createState() => _RestaurantDetailScreenState();
+}
+
+class _RestaurantDetailScreenState extends State<RestaurantDetailScreen> {
+  List food = [];
+
+  Future<void> readJson() async {
+    final jsonData = await rootBundle.loadString(UIData.foodata);
+    final data = await json.decode(jsonData);
+    setState(() {
+      food = data["food"];
+    });
+  }
+
+  @override
+  void initState() {
+    readJson();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar.large(
+              leading: IconButton(
+                  onPressed: () {
+                    Get.back();
+                  },
+                  icon: const Icon(Icons.arrow_back, size: 32)),
+              flexibleSpace: Image.asset(
+                widget.image!,
+                fit: BoxFit.cover,
+              ),
+              actions: [
+                IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.search, size: 32))
+              ],
+              bottom: const TabBar(
+                indicatorColor: Colors.white,
+                indicatorWeight:5 ,
+                tabs:[
+                  Tab(icon: Icon(Icons.home), text:"home"),
+                  Tab(icon: Icon(Icons.food_bank), text:"home")
+                ],
+              )),
+          SliverPadding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: defaultPaddingHorizontal),
+              sliver: SliverToBoxAdapter(
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(widget.name!,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 30)),
+                      Text(widget.address!,
+                          style: const TextStyle(fontSize: defaultFontSize16)),
+                      Row(
+                        children: [
+                          RatingBar.builder(
+                            itemSize: 16,
+                            initialRating: 4.5,
+                            minRating: 1,
+                            direction: Axis.horizontal,
+                            allowHalfRating: true,
+                            itemCount: 5,
+                            itemBuilder: (context, _) => const Icon(
+                              Icons.star,
+                              color: Colors.amber,
+                            ),
+                            onRatingUpdate: (rating) {},
+                          ),
+                          const Text('4.6 (1000+ Commnet)',
+                              style: TextStyle(fontSize: 14))
+                        ],
+                      )
+                    ]),
+              )),
+          const SliverPadding(
+            padding: EdgeInsets.symmetric(
+                horizontal: defaultPaddingHorizontal,
+                vertical: defaultPaddingHorizontal),
+            sliver: SliverToBoxAdapter(
+              child: Text('Favorite Dishes',
+                  style: TextStyle(
+                      fontSize: defaultFontSize18,
+                      fontWeight: FontWeight.bold)),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: defaultPaddingHorizontal),
+            sliver: SliverToBoxAdapter(
+                child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                    3,
+                    (index) => Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: defaultPaddingVertical),
+                          child: RestaurantFoodScreen(image: food[index]["image"],name: food[index]["name"],numberlike: food[index]["numberlike"],price: food[index]["price"],),
+                        )),
+              ),
+            )),
+          ),
+        const SliverPadding(
+            padding: EdgeInsets.symmetric(
+                horizontal: defaultPaddingHorizontal,
+                vertical: defaultPaddingHorizontal),
+            sliver: SliverToBoxAdapter(
+              child: Text('All Dishes',
+                  style: TextStyle(
+                      fontSize: defaultFontSize18,
+                      fontWeight: FontWeight.bold)),
+            ),
+          ),
+          
+        ],
+      ),
+    );
+  }
+}

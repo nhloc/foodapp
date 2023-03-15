@@ -1,21 +1,23 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:foodapp/state_management/core/master/constants.dart';
 import 'package:foodapp/state_management/core/master/master_data.dart';
-import 'package:foodapp/state_management/presentation/food/food_cardview.dart';
-import 'package:foodapp/state_management/presentation/food/food_pageview.dart';
+import 'package:foodapp/state_management/presentation/home/home_restaurant/home_restaurant_cardview.dart';
+import 'package:foodapp/state_management/presentation/home/home_restaurant/home_restaurant_pageview.dart';
+import 'package:foodapp/state_management/presentation/restaurant/restaurant_screen.dart';
 import 'package:get/get.dart';
 
-import '../restaurant/restaurant_screen.dart';
 
-class FoodScreen extends StatefulWidget {
-  const FoodScreen({super.key});
+
+class HomeRestaurantScreen extends StatefulWidget {
+  const HomeRestaurantScreen({super.key});
 
   @override
-  State<FoodScreen> createState() => _FoodScreenState();
+  State<HomeRestaurantScreen> createState() => _HomeRestaurantScreenState();
 }
 
-class _FoodScreenState extends State<FoodScreen> {
+class _HomeRestaurantScreenState extends State<HomeRestaurantScreen> {
   List food = [];
   List bestchoice = [];
   List newstore = [];
@@ -46,7 +48,7 @@ class _FoodScreenState extends State<FoodScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
               Text('Delivery To',
-                  style: TextStyle(fontSize: 16, color: Colors.deepOrange)),
+                  style: TextStyle(fontSize: defaultFontSize16, color: kMainColor)),
               Text('Can Tho City',
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold))
@@ -57,14 +59,14 @@ class _FoodScreenState extends State<FoodScreen> {
       ),
       body: CustomScrollView(
         slivers: [
-          SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          const SliverPadding(
+            padding: EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal, vertical: defaultPaddingVertical),
             sliver: SliverToBoxAdapter(
-              child: FoodPageView(),
+              child: HomeRestaurantPageView(),
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,7 +74,7 @@ class _FoodScreenState extends State<FoodScreen> {
                     const Text(
                       'Best Choice',
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: defaultFontSize18, fontWeight: FontWeight.bold),
                     ),
                     TextButton(
                         onPressed: () {
@@ -86,7 +88,7 @@ class _FoodScreenState extends State<FoodScreen> {
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -96,14 +98,14 @@ class _FoodScreenState extends State<FoodScreen> {
                       bestchoice.length,
                       (index) => Padding(
                           padding: const EdgeInsets.only(left: 8),
-                          child: FoodCardView(
+                          child: HomeRestaurantCardView(
                               image: bestchoice[index]["image"]!,
                               name: bestchoice[index]["name"]!,
                               address: bestchoice[index]["address"]!)))),
             )),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -111,19 +113,21 @@ class _FoodScreenState extends State<FoodScreen> {
                     const Text(
                       'New Restaurants',
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: defaultFontSize18, fontWeight: FontWeight.bold),
                     ),
-                    TextButton(onPressed: () {
+                    TextButton(
+                        onPressed: () {
                           Get.to(RestaurantScreen(
                             title: 'New Restaurants',
                             data: newstore,
                           ));
-                        }, child: const Text('See more'))
+                        },
+                        child: const Text('See more'))
                   ]),
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -133,14 +137,14 @@ class _FoodScreenState extends State<FoodScreen> {
                       bestchoice.length,
                       (index) => Padding(
                           padding: const EdgeInsets.only(left: 8),
-                          child: FoodCardView(
+                          child: HomeRestaurantCardView(
                               image: newstore[index]["image"]!,
                               name: newstore[index]["name"]!,
                               address: newstore[index]["address"]!)))),
             )),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -148,19 +152,21 @@ class _FoodScreenState extends State<FoodScreen> {
                     const Text(
                       'All Restaurants',
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: defaultFontSize18, fontWeight: FontWeight.bold),
                     ),
-                    TextButton(onPressed: () {
+                    TextButton(
+                        onPressed: () {
                           Get.to(RestaurantScreen(
                             title: 'All Restaurants',
                             data: newstore,
                           ));
-                        }, child: const Text('See more'))
+                        },
+                        child: const Text('See more'))
                   ]),
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPaddingHorizontal),
             sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -170,7 +176,7 @@ class _FoodScreenState extends State<FoodScreen> {
                       bestchoice.length,
                       (index) => Padding(
                           padding: const EdgeInsets.only(left: 8),
-                          child: FoodCardView(
+                          child: HomeRestaurantCardView(
                               image: newstore[index]["image"]!,
                               name: newstore[index]["name"]!,
                               address: newstore[index]["address"]!)))),

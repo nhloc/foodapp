@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/state_management/presentation/food/food_screen.dart';
+import 'package:foodapp/state_management/presentation/home/home_restaurant/home_restaurant_screen.dart';
 import 'package:foodapp/state_management/presentation/routes/app_routes.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +24,7 @@ class _HomePage extends State<HomeScreen> {
         body: SafeArea(
             child: IndexedStack(
           index: _selectedIndex,
-          children: const [FoodScreen(), UserScreen()],
+          children: const [HomeRestaurantScreen(), UserScreen()],
         )),
         bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
